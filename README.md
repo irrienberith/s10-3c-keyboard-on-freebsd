@@ -7,18 +7,18 @@ The bios of Lenovo netbook s10-3c is weird, so, after i installed linux or freeb
 Solutions are below.
 
 ### 1. Make sure you have gcc in your system
-if not ,try these:
+if not, try these:
 
-on FreeBSD,`# pkg install gcc`
+on *FreeBSD*, use `# pkg install gcc`
 
-on Ubuntu/Debian,`# apt-get install gcc`
+on *Ubuntu/Debian*, use `# apt-get install gcc`
 
-on openSUSE,`# zypper in gcc`
+on *openSUSE*, use `# zypper in gcc`
 
 ### 2. Use these code
 use your text editor to open a file:
 
-on FreeBSD,`% ee keyboard.c`
+on *FreeBSD*, use `% ee keyboard.c`
 and paste the code to the editor:   
 
       #include<unistd.h>
@@ -44,7 +44,7 @@ and paste the code to the editor:
         return 0;
       }
 
-on Linux,`$ vim keyboard.c`      
+on *Linux*, use `$ vim keyboard.c`      
 and paste the code to the editor:  
 
       #include <unistd.h>
