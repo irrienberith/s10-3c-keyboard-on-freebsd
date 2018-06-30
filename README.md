@@ -69,6 +69,7 @@ and paste the code to the editor:
       }
 
 Then, save the source file.
+
 ------
 ### 3. Compile the code
 Use gcc to compile the code:
