@@ -8,7 +8,10 @@ Solutions are below.
 ### 1. Make sure you have gcc in your system
 if not, try these:
 
-on *FreeBSD*, use `# pkg install gcc`
+on *FreeBSD*, use 
+`
+    # pkg install gcc
+`
 
 on *Ubuntu/Debian*, use `# apt-get install gcc`
 
@@ -61,7 +64,7 @@ and paste the code to the editor:
         return 0;
       }
 
-Then save the source file.
+then, save the source file.
 
 ### 3. Compile the code
 
