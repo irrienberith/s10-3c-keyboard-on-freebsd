@@ -75,6 +75,47 @@ use gcc to compile the code:
 ```
 # gcc keyboard.c -o enable-keyboard
 ```
+If it works fine， we can find a file `enable-keyboard`in the current directory.
+Bofore wo use it,we need to fix the permission:
+```
+# chmod +x enable-keyboard
+```
+
+### 4.Use the code
+We can test the code to make sure it works, input in CLI:
+```
+# ./enable-keyboard
+```
+After doing this, the keyborad of s10-3c finally works!
+But if we reboot the system, it doesn't work anymore until we run the code again.
+So we need to run the code during startup:
+* Move the file to an appropriate directory, for example,
+```
+# mv enable-keyboard /usr/bin
+```
+* Add to system startup process, for example,
+```
+# cd /etc/rc.d
+# vi enalbe_keyboard
+```
+add these lines to the file:
+
+      #!/bin/sh
+      /usr/bin/enable-keyboard
+ 
+ and fix the permission:
+ ```
+ # chmod +x enable_keyboard
+ ```
+Then, reboot your system!
+
+
+
+
+
+
+
+
 
 
 
