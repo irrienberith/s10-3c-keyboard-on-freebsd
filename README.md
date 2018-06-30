@@ -19,7 +19,8 @@ on openSUSE,`# zypper in gcc`
 use your text editor to open a file:
 
 on FreeBSD,`% ee keyboard.c`
-and paste the code to the editor:    
+and paste the code to the editor:   
+
       #include<unistd.h>
       #include<machine/cpufunc.h> //putb()
       #include<sys/cdefs.h>
@@ -44,6 +45,8 @@ and paste the code to the editor:
       }
 
 on Linux,`$ vim keyboard.c`      
+and paste the code to the editor:  
+
       #include <unistd.h>
       #include <sys/io.h>
 
