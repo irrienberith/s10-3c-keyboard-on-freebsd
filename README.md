@@ -8,8 +8,11 @@ Solutions are below.
 
 ### 1. make sure you have gcc in your system
 if not ,try these:
+
 on FreeBSD,`# pkg install gcc`
+
 on Ubuntu/Debian,`# apt-get install gcc`
+
 on openSUSE,`# zypper in gcc`
 
 
