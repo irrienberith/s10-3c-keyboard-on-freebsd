@@ -9,13 +9,17 @@ Solutions are below.
 if not, try these:
 
 on *FreeBSD*, use 
-`
-    # pkg install gcc
-`
-
-on *Ubuntu/Debian*, use `# apt-get install gcc`
-
-on *openSUSE*, use `# zypper in gcc`
+```
+# pkg install gcc
+```
+on *Ubuntu/Debian*, use 
+```
+# apt-get install gcc
+```
+on *openSUSE*, use 
+```
+# zypper in gcc
+```
 
 ### 2. Save the code to a file
 use your text editor to open a file:
@@ -67,7 +71,10 @@ and paste the code to the editor:
 then, save the source file.
 
 ### 3. Compile the code
-
+use gcc to compile the code:
+```
+# gcc keyboard.c -o enable-keyboard
+```
 
 
 
