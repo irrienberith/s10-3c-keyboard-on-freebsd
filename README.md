@@ -16,11 +16,10 @@ on Ubuntu/Debian,`# apt-get install gcc`
 on openSUSE,`# zypper in gcc`
 
 ### 2. Use these code
-use your text editor to open a file from `/home/yourusername`:
+use your text editor to open a file:
 
 on FreeBSD,`% ee keyboard.c`
-and paste the code to the editor:
-    
+and paste the code to the editor:    
       #include<unistd.h>
       #include<machine/cpufunc.h> //putb()
       #include<sys/cdefs.h>
@@ -41,16 +40,24 @@ and paste the code to the editor:
         if(argc == 2 && argv[1][0] == '0')
           data = 0xad; //disable keyboard
         outb(I8042_COMMAND_REG, data);
-
         return 0;
       }
 
+on Linux,`$ vim keyboard.c`      
+      #include <unistd.h>
+      #include <sys/io.h>
 
+      #define I8042_COMMAND_REG 0x64
+      int main(int argc, char *argv[]) {
+        char data = 0xae; // enable keyboard
 
+        ioperm(I8042_COMMAND_REG, 1, 1);
 
-on Linux,`$ vim keyboard.c`
-
-
+        if (argc == 2 && argv[1][0] == '0')
+          data = 0xad; // disable keyboard
+        outb(data, I8042_COMMAND_REG);
+        return 0;
+      }
 
 
 
