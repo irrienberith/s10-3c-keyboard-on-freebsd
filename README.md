@@ -20,7 +20,7 @@ On *openSUSE*, use
 ```
 # zypper in gcc
 ```
-
+-----
 ### 2. Save the code to a file
 Use your text editor to open a file:
 
@@ -69,7 +69,7 @@ and paste the code to the editor:
       }
 
 Then, save the source file.
-
+------
 ### 3. Compile the code
 Use gcc to compile the code:
 ```
@@ -80,7 +80,7 @@ Bofore wo use it, we need to fix the permission:
 ```
 # chmod +x enable-keyboard
 ```
-
+------
 ### 4.Use the code
 We can test the code to make sure it works, input in CLI:
 ```
@@ -112,11 +112,17 @@ Then, reboot your system and every is done.
 ------
 
 > Reference links:
+
 > http://help.ubuntu.ru/%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/s10-3c#%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0
+
 > https://yjlv.blogspot.com/2014/05/portio-python-low-level-port-io-for.html
+
 > https://ask.fedoraproject.org/en/question/6995/ideapad-s10-3c-keyboard-not-working/
+
 > https://lusir.me/enable-keyboard-in-linux.html
+
 > https://forums.freebsd.org/threads/parallel-port-inb-outb-sys-io-h.6701/
+
 > https://github.com/lattera/freebsd/blob/master/lib/libc/i386/sys/i386_set_ioperm.c
 
 
