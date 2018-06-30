@@ -1,30 +1,30 @@
 # s10-3c-keyboard-on-freebsd
 
-Enable lenovo s10-3c's keyboard on FreeBSD /Linux
+Enable lenovo s10-3c's keyboard on FreeBSD/Linux
 
-> The bios of Lenovo netbook s10-3c is weird, so, after i installed linux or freebsd on it, the keyboard just DOESN'T work.
+> The BIOS of Lenovo netbook *s10-3c* is weird, so, after i installed linux or freebsd on it, the keyboard just DOESN'T work.
 Solutions are below.
 
 ### 1. Make sure you have gcc in your system
-if not, try these:
+If not, try this:
 
-on *FreeBSD*, use 
+On *FreeBSD*, use 
 ```
 # pkg install gcc
 ```
-on *Ubuntu/Debian*, use 
+On *Ubuntu/Debian*, use 
 ```
 # apt-get install gcc
 ```
-on *openSUSE*, use 
+On *openSUSE*, use 
 ```
 # zypper in gcc
 ```
 
 ### 2. Save the code to a file
-use your text editor to open a file:
+Use your text editor to open a file:
 
-on *FreeBSD*, use `% ee keyboard.c`
+On *FreeBSD*, use `% ee keyboard.c`
 and paste the code to the editor:   
 
       #include<unistd.h>
@@ -50,7 +50,7 @@ and paste the code to the editor:
         return 0;
       }
 
-on *Linux*, use `$ vim keyboard.c`      
+On *Linux*, use `$ vim keyboard.c`      
 and paste the code to the editor:  
 
       #include <unistd.h>
@@ -68,15 +68,15 @@ and paste the code to the editor:
         return 0;
       }
 
-then, save the source file.
+Then, save the source file.
 
 ### 3. Compile the code
-use gcc to compile the code:
+Use gcc to compile the code:
 ```
 # gcc keyboard.c -o enable-keyboard
 ```
-If it works fine， we can find a file `enable-keyboard`in the current directory.
-Bofore wo use it,we need to fix the permission:
+If it works fine we can find a file `enable-keyboard`in the current directory. 
+Bofore wo use it, we need to fix the permission:
 ```
 # chmod +x enable-keyboard
 ```
