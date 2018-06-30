@@ -4,7 +4,7 @@ Enable lenovo s10-3c's keyboard on FreeBSD/Linux
 
 > The BIOS of Lenovo netbook *s10-3c* is weird, so, after i installed linux or freebsd on it, the keyboard just DOESN'T work.
 Solutions are below.
-
+------
 ### 1. Make sure you have gcc in your system
 If not, try this:
 
@@ -107,9 +107,13 @@ add these lines to the file:
  ```
  # chmod +x enable_keyboard
  ```
-Then, reboot your system!
+Then, reboot your system and every is done.
 
+------
 
+> Reference links:
+> (http://help.ubuntu.ru/%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/s10-3c#%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0)
+>
 
 
 
